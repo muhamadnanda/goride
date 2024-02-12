@@ -1,0 +1,181 @@
+/* CSS dari set pertama */
+#hero {
+    background-color: white;
+    color: black;
+}
+
+#hero h2 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#hero p {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* CSS dari set kedua */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #171616;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f44336;
+    color: #0b0b0b;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#features {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.feature {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.feature img {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    background-color: #333;
+    color: #0f0f0f;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#order {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#order form {
+    display: inline-block;
+    text-align: left;
+}
+
+#order input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#order button {
+    background-color: #f44336;
+    color: #100f0f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#order button:hover {
+    background-color: #ff6659;
+}
+
+/* Gabungan CSS */
+#hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    color: #1f1d1d;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero h2 {
+    margin-top: 0;
+    color: #f3ecec;
+}
+
+#hero p {
+    color: #f1f1f1;
+}
+.parallax {
+    position: absolute;
+    /* Sesuaikan posisi dan efek paralaks */
+    transform: translate(-50%, -50%);
+    /* Atur z-index agar berada di belakang gambar utama */
+    z-index: -1;
+}
+
+.parallax:nth-child(1) {
+    top: 25%;
+    left: 25%;
+}
+
+.parallax:nth-child(2) {
+    top: 75%;
+    left: 75%;
+}
+
+/* Tambahkan styling tambahan sesuai kebutuhan */
+.flex-container {
+    overflow: hidden;
+}
+
+.flex-container .flex {
+    display: inline-flex;
+    animation: slide-right 10s linear infinite; /* Sesuaikan durasi dan timing function animasinya */
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 4rem)); /* -4rem untuk memberi jarak antara foto terakhir dengan foto pertama */
+    }
+}
+.flex-container {
+    display: flex;
+    justify-content: center; /* Untuk memposisikan konten ke tengah secara horizontal */
+    margin-top: 20px; /* Sesuaikan dengan jarak yang diinginkan antara konten di atas dan foto-foto */
+}

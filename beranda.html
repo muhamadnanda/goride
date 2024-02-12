@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Halaman Web</title>
+    <!-- Link CSS Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Stylesheet kustom Anda (jika ada) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo dan Navigasi -->
+            <h1 class="text-lg md:text-2xl font-bold flex items-center">
+                <img src="asset/logo.png" alt="Logo GoRide" style="width: 5rem; margin-right: 0.5rem; transform: scale(1.5);">
+                GoRide
+            <nav>
+                <ul class="flex">
+                    <li><a href="beranda.html" class="hover:text-gray-300 px-2 md:px-3 py-2">Beranda</a></li>
+                    <li><a href="tentang_kami.html" class="hover:text-gray-300 px-2 md:px-3 py-2">Tentang Kami</a></li>
+                    <li><a href="pemesanan_ojek.html" class="hover:text-gray-300 px-2 md:px-3 py-2">Pesan Ojek</a></li>
+                    <li><a href="hubungi .html" class="hover:text-gray-300 px-2 md:px-3 py-2">Hubungi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Gambar Header atau Banner -->
+    <section class="bg-blue-500 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl text-white font-bold mb-4"> GoRide</h2>
+            <h2 class="text-3xl text-white font-bold mb-4">Selamat Datang di GoRide</h2>
+            <button class="mt-8 bg-white text-blue-500 px-6 py-2 rounded-full font-semibold hover:bg-blue-400 hover:text-white">
+                <a href="profil_pengguna_ojek.html">Lihat Profil</a>
+            </button>
+            
+        </div>
+    </section>
+
+    <!-- Konten Utama -->
+    <section class="container mx-auto py-8 flex flex-col items-center justify-center">
+        <h2 class="text-3xl font-semibold mb-4">Konten Utama</h2>
+        <!-- Tambahkan gambar di bawah tulisan -->
+        <div class="relative">
+            <img src="asset/foto1.jpg" alt="Gambar Aplikasi" class="rounded-xl">
+            <div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
+                <!-- Konten yang ingin ditampilkan di tengah gambar -->
+            </div>
+        </div>
+        <!-- Tambahkan konten utama lainnya di sini -->
+    </section>
+    
+
+    <!-- Tautan Cepat -->
+    <section class="bg-gray-200 py-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-4">Akses Cepat</h2>
+            <div class="flex justify-center">
+                <a href="#" class="mx-4 text-blue-500 hover:underline">Produk</a>
+                <a href="#" class="mx-4 text-blue-500 hover:underline">Promosi</a>
+                <a href="#" class="mx-4 text-blue-500 hover:underline">Kontak Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 GoRide - Layanan Ojek Online</p>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript (jika diperlukan) -->
+
+</body>
+</html>
